@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Figmaからのコーディング(タイトル編)</title>
+        <meta name="description" content="ページの説明" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- js -->
+        <script src="/js/main.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">無料相談</h1>
+
+            <form class="form" method="post" action="">
+                <div class="form-item">
+                    <label for="name" class="label">お名前</label>
+                    <input type="text" name="name" id="name" placeholder="山田 太郎" class="text" />
+                </div>
+
+                <div class="form-item">
+                    <label for="contact" class="label">お問い合わせ内容</label>
+                    <textarea name="contact" id="contact" placeholder="お問い合わせ内容を記入してください。" class="textarea"></textarea>
+                </div>
+
+                <!-- 隠しフィールドを追加 -->
+                <input type="hidden" name="utm_source" class="js-utm-source" />
+            </form>
+        </div>
+    </body>
+</html>
